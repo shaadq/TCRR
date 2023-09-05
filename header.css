@@ -71,7 +71,7 @@ header {
 .navbar-nav .nav-link.active {
   color: #be9e2d;
   font-weight: bold;
-  border-bottom: 2px solid;
+  border-bottom: 3px solid;
   height: 100%;
 }
 .navbar-toggler {
