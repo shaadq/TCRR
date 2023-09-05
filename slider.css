@@ -1,0 +1,32 @@
+/* Styling for the card container */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for each card */
+.slide {
+  padding: 15px;
+  margin: 10px;
+  min-width: 300px; /* Adjust the width as needed */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+  .slider {
+    width: calc(
+      100% + 20px
+    ); /* Make the slider wider to accommodate half cards on each side */
+    transform: translateX(
+      -10px
+    ); /* Move the slider to the left by half card width */
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+}
