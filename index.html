@@ -377,7 +377,7 @@
     <section class="section-wrapper padding-top-sm-0">
       <div class="container">
         <h1 class="section-title-black text-center">What Our Clients Says</h1>
-        <div class="slider-container">
+        <div class="client-feedback-slider-container">
           <div class="slider">
             <div class="slide">
               <div class="client-feedback-card">
@@ -727,10 +727,13 @@
         $(".slider").slick({
           slidesToShow: 3,
           slidesToScroll: 1,
+          infinite: false,
+          autoplay: false,
           responsive: [
             {
               breakpoint: 768,
               settings: {
+                arrows: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
               },
@@ -748,14 +751,25 @@
           arrows: true,
           infinite: false,
           autoplay: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
         });
+
         $(".prev-btn").click(function () {
           $(".slick-list").slick("slickPrev");
         });
-
         $(".next-btn").click(function () {
           $(".slick-list").slick("slickNext");
         });
+
         $(".prev-btn").addClass("slick-disabled");
         $(".slick-list").on("afterChange", function () {
           if ($(".slick-prev").hasClass("slick-disabled")) {

@@ -1,17 +1,18 @@
 /* Styling for the card container */
-.slider-container {
+.client-feedback-slider-container {
   position: relative;
   overflow: hidden;
 }
 
-.slider {
+.client-feedback-slider-container .slider {
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   transition: transform 0.3s ease-in-out;
 }
 
 /* Styling for each card */
-.slide {
+.client-feedback-slider-container .slide {
   padding: 15px;
   /* margin: 10px; */
   min-width: 300px; /* Adjust the width as needed */
@@ -19,7 +20,7 @@
 
 /* Media query for mobile screens */
 @media (max-width: 480px) {
-  .slider {
+  .client-feedback-slider-container .slider {
     width: calc(
       100% + 20px
     ); /* Make the slider wider to accommodate half cards on each side */
@@ -30,47 +31,40 @@
 
     flex-wrap: nowrap;
   }
-  .slider::-webkit-scrollbar {
+  .client-feedback-slider-container .slider::-webkit-scrollbar {
     display: none;
   }
-  .slider {
+  .client-feedback-slider-container .slider {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
-  .slick-track .slide {
+  /* .slick-track .slide {
     transform: scale(0.5);
   }
   .slick-track .slick-active {
     transition: 0.5s;
     transform: scale(0.9) !important;
-  }
+  } */
 }
 
 /* Recent posts */
 .recent-posts-slider .slick-list {
-  /* max-width: 700px; */
+  max-width: 90%;
   margin: 0 auto;
   padding: 30px 0;
 }
 .recent-posts-slider .slick-list .slick-slide {
   font-size: 30px;
   text-align: center;
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
   line-height: 2;
   font-weight: 700;
-}
-.recent-posts-slider .slick-list .slick-slide:nth-child(even) {
-  /* background-color: #ddd; */
-}
-.recent-posts-slider .slick-list .slick-slide:nth-child(odd) {
-  /* background-color: #ccc; */
 }
 .recent-posts-slider .slick-arrow {
   z-index: 1;
   width: 40px;
   height: 40px;
 }
-
 .recent-posts-slider .slick-arrow:before {
   font-size: 30px;
 }
@@ -79,4 +73,17 @@
 }
 .recent-posts-slider .slick-prev {
   left: 0;
+}
+/* .slick-next {
+  background-image: url(Assets/Images/icon-next.png);
+  background-size: cover;
+} */
+.slick-next:before,
+.slick-prev:before {
+  color: #e6c655 !important;
+  opacity: 1 !important;
+  font-size: 40px !important;
+}
+.recent-posts-slider .slick-disabled {
+  opacity: 0.5;
 }
