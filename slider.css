@@ -27,6 +27,14 @@
       -10px
     ); /* Move the slider to the left by half card width */
     overflow-x: scroll;
+
     flex-wrap: nowrap;
+  }
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  .slider {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
