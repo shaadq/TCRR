@@ -4,6 +4,16 @@ body {
 ::placeholder {
   color: lightgray !important;
 }
+.btn-outline-primary {
+  border: 1px solid #e6c655;
+  color: #e6c655;
+  width: fit-content !important;
+}
+.btn-outline-primary:is(:hover, :active, :focus) {
+  background-color: #e6c655 !important;
+  color: white !important;
+  border: 1px solid #e6c655 !important;
+}
 .initial-section {
   margin-top: 108.52px;
 }
@@ -162,7 +172,6 @@ body {
   border-radius: 17px;
   display: flex;
   flex-direction: column;
-  
 }
 .recent-posts-img {
   width: 100%;
@@ -189,13 +198,14 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 3px;
 }
 .recent-post-date {
   font-size: 15px;
 }
 .recent-post-title {
   font-size: 20px;
+  font-weight: bold;
 }
 .recent-post-content {
   font-size: 14px;
@@ -204,6 +214,14 @@ body {
 }
 .client-feedback-slider-container {
   margin-top: 40px;
+}
+.recent-posts-slider-card-wrapper {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.read-more-btn {
+  display: none;
 }
 @media screen and (max-width: 576px) {
   .padding-top-sm-0 {
@@ -257,5 +275,24 @@ body {
   }
   .client-feedback-card {
     padding: 20px;
+  }
+  .recent-posts-card {
+    height: fit-content;
+  }
+  .recent-posts-bottom-container {
+    gap: 2px;
+  }
+  .recent-post-title {
+    font-size: 18px;
+  }
+  .recent-post-date {
+    font-size: 13px;
+  }
+  .recent-post-content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .read-more-btn {
+    display: block;
   }
 }

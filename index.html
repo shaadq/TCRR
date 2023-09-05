@@ -566,7 +566,7 @@
         <h1 class="section-title-black text-center">Recent Posts</h1>
         <div class="recent-posts-slider">
           <div class="slick-list">
-            <div class="d-flex align-items-center justify-content-center">
+            <div class="recent-posts-slider-card-wrapper">
               <div class="recent-posts-card">
                 <div class="recent-posts-top-container">
                   <img
@@ -588,10 +588,13 @@
                     work and excitement. The set up that we were doing included
                     custom risers and staging for a large private event.
                   </p>
+                  <button class="btn btn-outline-primary read-more-btn">
+                    Read more &#8594;
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center">
+            <div class="recent-posts-slider-card-wrapper">
               <div class="recent-posts-card">
                 <div class="recent-posts-top-container">
                   <img
@@ -613,14 +616,17 @@
                     work and excitement. The set up that we were doing included
                     custom risers and staging for a large private event.
                   </p>
+                  <button class="btn btn-outline-primary read-more-btn">
+                    Read more &#8594;
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center">
+            <div class="recent-posts-slider-card-wrapper">
               <div class="recent-posts-card">
                 <div class="recent-posts-top-container">
                   <img
-                    src="Assets/Images/recent-post-img-2.png"
+                    src="Assets/Images/recent-post-img-3.png"
                     alt=""
                     class="recent-posts-img"
                   />
@@ -638,10 +644,13 @@
                     work and excitement. The set up that we were doing included
                     custom risers and staging for a large private event.
                   </p>
+                  <button class="btn btn-outline-primary read-more-btn">
+                    Read more &#8594;
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center">
+            <div class="recent-posts-slider-card-wrapper">
               <div class="recent-posts-card">
                 <div class="recent-posts-top-container">
                   <img
@@ -663,6 +672,9 @@
                     work and excitement. The set up that we were doing included
                     custom risers and staging for a large private event.
                   </p>
+                  <button class="btn btn-outline-primary read-more-btn">
+                    Read more &#8594;
+                  </button>
                 </div>
               </div>
             </div>
@@ -702,6 +714,9 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Header tabs js -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
@@ -719,30 +734,6 @@
         });
       });
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <!-- Clients Feedback
-    <script>
-      // Clients Feedback Slider
-      $(document).ready(function () {
-        $(".slider").slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: false,
-          autoplay: false,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: false,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
-      });
-    </script> -->
     <!-- Recent Posts Slider -->
     <script>
       $(document).ready(function () {
@@ -758,6 +749,16 @@
               settings: {
                 arrows: false,
                 slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+              },
+            },
+            {
+              breakpoint: 1100,
+              settings: {
+                arrows: true,
+                slidesToShow: 2,
                 slidesToScroll: 1,
               },
             },
@@ -786,7 +787,7 @@
         });
       });
     </script>
-    <!-- Test -->
+    <!-- Client Feedback Slider -->
     <script>
       $(document).ready(function () {
         $(".slick-slider").slick({
@@ -805,10 +806,17 @@
                 slidesToScroll: 1,
               },
             },
+            {
+              breakpoint: 1100,
+              settings: {
+                arrows: false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
           ],
         });
       });
-
       // Image Slider Demo:
       // https://codepen.io/vone8/pen/gOajmOo
     </script>
