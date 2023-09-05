@@ -23,8 +23,6 @@ body {
 .light-blue-bg-color {
   background-color: #f1f5fb;
 }
-.custom-row {
-}
 .section-wrapper {
   padding: 40px 0;
 }
@@ -164,6 +162,7 @@ body {
   border-radius: 17px;
   display: flex;
   flex-direction: column;
+  
 }
 .recent-posts-img {
   width: 100%;
@@ -202,6 +201,9 @@ body {
   font-size: 14px;
   line-height: 22px;
   font-weight: 500;
+}
+.client-feedback-slider-container {
+  margin-top: 40px;
 }
 @media screen and (max-width: 576px) {
   .padding-top-sm-0 {

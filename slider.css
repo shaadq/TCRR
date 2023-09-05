@@ -1,50 +1,16 @@
-/* Styling for the card container */
-.client-feedback-slider-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.client-feedback-slider-container .slider {
-  /* width: 100%; */
+/* Clients Feedback slider */
+.client-feedback-slider-container .slick-slider .element {
+  display: inline-block;
+  margin: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Styling for each card */
-.client-feedback-slider-container .slide {
-  padding: 15px;
-  /* margin: 10px; */
-  min-width: 300px; /* Adjust the width as needed */
-}
-
-/* Media query for mobile screens */
-@media (max-width: 480px) {
-  .client-feedback-slider-container .slider {
-    width: calc(
-      100% + 20px
-    ); /* Make the slider wider to accommodate half cards on each side */
-    transform: translateX(
-      -10px
-    ); /* Move the slider to the left by half card width */
-    overflow-x: scroll;
-
-    flex-wrap: nowrap;
-  }
-  .client-feedback-slider-container .slider::-webkit-scrollbar {
-    display: none;
-  }
-  .client-feedback-slider-container .slider {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-  /* .slick-track .slide {
-    transform: scale(0.5);
-  }
-  .slick-track .slick-active {
-    transition: 0.5s;
-    transform: scale(0.9) !important;
-  } */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /* Recent posts */
@@ -56,7 +22,7 @@
 .recent-posts-slider .slick-list .slick-slide {
   font-size: 30px;
   text-align: center;
-  /* padding: 40px 20px; */
+  padding: 0 20px;
   line-height: 2;
   font-weight: 700;
 }
@@ -86,4 +52,16 @@
 }
 .recent-posts-slider .slick-disabled {
   opacity: 0.5;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+  /* Client feedback Slider */
+  .client-feedback-slider-container .slick-track .slick-slide {
+    transform: scale(0.8);
+  }
+  .client-feedback-slider-container .slick-track .slick-active {
+    transition: 0.5s;
+    transform: scale(1) !important;
+  }
 }

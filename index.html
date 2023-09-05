@@ -378,8 +378,8 @@
       <div class="container">
         <h1 class="section-title-black text-center">What Our Clients Says</h1>
         <div class="client-feedback-slider-container">
-          <div class="slider">
-            <div class="slide">
+          <div class="slick-slider">
+            <div class="element">
               <div class="client-feedback-card">
                 <div class="row">
                   <div class="col-2">
@@ -438,7 +438,7 @@
                 </div>
               </div>
             </div>
-            <div class="slide">
+            <div class="element">
               <div class="client-feedback-card">
                 <div class="row">
                   <div class="col-2">
@@ -497,7 +497,7 @@
                 </div>
               </div>
             </div>
-            <div class="slide">
+            <div class="element">
               <div class="client-feedback-card">
                 <div class="row">
                   <div class="col-2">
@@ -721,6 +721,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Clients Feedback
     <script>
       // Clients Feedback Slider
       $(document).ready(function () {
@@ -741,7 +742,7 @@
           ],
         });
       });
-    </script>
+    </script> -->
     <!-- Recent Posts Slider -->
     <script>
       $(document).ready(function () {
@@ -784,6 +785,32 @@
           }
         });
       });
+    </script>
+    <!-- Test -->
+    <script>
+      $(document).ready(function () {
+        $(".slick-slider").slick({
+          slidesToShow: 3,
+          infinite: false,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+
+      // Image Slider Demo:
+      // https://codepen.io/vone8/pen/gOajmOo
     </script>
   </body>
 </html>
