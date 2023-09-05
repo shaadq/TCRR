@@ -13,7 +13,7 @@
 /* Styling for each card */
 .slide {
   padding: 15px;
-  margin: 10px;
+  /* margin: 10px; */
   min-width: 300px; /* Adjust the width as needed */
 }
 
@@ -36,5 +36,12 @@
   .slider {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+  }
+  .slick-track .slide {
+    transform: scale(0.5);
+  }
+  .slick-track .slick-active {
+    transition: 0.5s;
+    transform: scale(0.9) !important;
   }
 }
