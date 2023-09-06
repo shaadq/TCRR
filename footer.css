@@ -19,6 +19,9 @@ footer {
 .social-media-icons-wrapper img {
   width: 17px;
 }
+.footer-link {
+  color: white;
+}
 @media screen and (max-width: 576px) {
   .social-media-icons-wrapper {
     justify-content: center;
