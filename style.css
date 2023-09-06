@@ -33,6 +33,10 @@ body {
   background-image: url(Assets/Images/about-us-blue-bg.png);
   background-size: cover;
 }
+.cr-blue-bg {
+  background-image: url(Assets/Images/cr-blue-bg.png);
+  background-size: cover;
+}
 .blue-bg-color-left {
   background-color: #0b0a32;
   position: absolute;
@@ -322,7 +326,46 @@ body {
   width: calc(50% + 150px);
   z-index: -1;
   top: 50px;
-  /* right: 0; */
+  left: 0;
+}
+/* Choral and Choir Risers */
+.template-image-left {
+  width: 140%;
+  position: relative;
+  right: 270px;
+  /* top: 42px; */
+  top: 10%;
+}
+.template-image-right {
+  width: 137%;
+  position: relative;
+  top: 11%;
+}
+.main-template-blue-bg-right {
+  background-color: #0b0a32;
+  position: absolute;
+  height: 100%;
+  width: calc(50% + 250px);
+  z-index: -1;
+  right: 0;
+}
+.template-section-title-white {
+  font-size: 24px;
+}
+.template-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.template-section-content {
+  margin-top: 90px;
+}
+.main-template-blue-bg-left {
+  background-color: #0b0a32;
+  position: absolute;
+  height: 100%;
+  width: calc(50% + 250px);
+  z-index: -1;
   left: 0;
 }
 @media screen and (max-width: 576px) {
@@ -450,5 +493,38 @@ body {
   }
   .custom-margin {
     margin-top: -70px;
+  }
+  /* Choral and Choir Rentals */
+  .template-image-left {
+    width: 100%;
+    position: static;
+  }
+  .template-image-right {
+    width: 100%;
+    position: static;
+  }
+  .main-template-blue-bg-right {
+    background-color: #0b0a32;
+    position: absolute;
+    height: calc(100% - 140px);
+    width: 100%;
+    z-index: -1;
+    right: 0;
+    top: 140px;
+  }
+  .main-template-blue-bg-left {
+    width: 100%;
+    top: 150px;
+  }
+  .template-section-content {
+    margin-top: 50px;
+  }
+  .template-section-title-white {
+    font-size: 24px;
+  }
+  .template-ul {
+    align-items: start;
+    margin-top: 29px;
+    margin-left: 20px;
   }
 }
