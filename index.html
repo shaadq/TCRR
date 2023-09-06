@@ -589,7 +589,7 @@
                     custom risers and staging for a large private event.
                   </p>
                   <button class="btn btn-outline-primary read-more-btn">
-                    Read more &#8594;
+                    Read more <span style="font-size: 20px">&#8594;</span>
                   </button>
                 </div>
               </div>
@@ -679,6 +679,20 @@
               </div>
             </div>
           </div>
+          <button class="recent-posts-custom-prev slick-btn slick-btn-prev">
+            <img
+              src="Assets/Images/icon-prev.png"
+              alt=""
+              class="slick-arrow-img"
+            />
+          </button>
+          <button class="recent-posts-custom-next slick-btn slick-btn-next">
+            <img
+              src="Assets/Images/icon-next.png"
+              alt=""
+              class="slick-arrow-img"
+            />
+          </button>
         </div>
         <!-- <div class="btn-wrap">
           <button class="prev-btn">Previous</button>
@@ -743,6 +757,8 @@
           arrows: true,
           infinite: false,
           autoplay: false,
+          prevArrow: $(".recent-posts-custom-prev"), // Custom previous button
+          nextArrow: $(".recent-posts-custom-next"), // Custom next button
           responsive: [
             {
               breakpoint: 768,
@@ -751,7 +767,7 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 1000,
+                autoplaySpeed: 2000,
               },
             },
             {
