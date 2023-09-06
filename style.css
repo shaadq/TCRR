@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   font-family: "Euclid Circular A", sans-serif !important;
 }
 ::placeholder {
