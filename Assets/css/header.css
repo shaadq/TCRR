@@ -90,6 +90,9 @@ header {
   .nav-item {
     height: 58px;
   }
+  .header-dropdown-menu {
+    top: 59px;
+  }
 }
 @media screen and (max-width: 576px) {
   .custom-container-fluid {

@@ -376,6 +376,7 @@ body {
   z-index: -1;
   left: 0;
 }
+
 @media screen and (max-width: 576px) {
   .padding-top-sm-0 {
     padding-top: 0;

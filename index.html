@@ -93,7 +93,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="pages/aboutus.html">About Us</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown header-dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -103,7 +103,7 @@
                   >
                     Event Riser Rentals
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu header-dropdown-menu">
                     <li>
                       <a
                         class="dropdown-item"
@@ -808,6 +808,22 @@
       });
       // Image Slider Demo:
       // https://codepen.io/vone8/pen/gOajmOo
+    </script>
+    <script>
+      document
+        .querySelector(".header-dropdown")
+        .addEventListener("mouseenter", function () {
+          console.log("shaad");
+          document.querySelector(".header-dropdown-menu").classList.add("show");
+        });
+
+      document
+        .querySelector(".header-dropdown")
+        .addEventListener("mouseleave", function () {
+          document
+            .querySelector(".header-dropdown-menu")
+            .classList.remove("show");
+        });
     </script>
   </body>
 </html>
