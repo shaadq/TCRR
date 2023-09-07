@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TCRR</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/euclid-circular-a"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="Assets/Images/tcrr-tab-logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <style>
+      /* .recent-posts-slider .slick-list {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 30px 0;
+      }
+      .recent-posts-slider .slick-list .slick-slide {
+        font-size: 30px;
+        text-align: center;
+        padding: 40px 20px;
+        line-height: 2;
+        font-weight: 700;
+      }
+      .recent-posts-slider .slick-list .slick-slide:nth-child(even) {
+        background-color: #ddd;
+      }
+      .recent-posts-slider .slick-list .slick-slide:nth-child(odd) {
+        background-color: #ccc;
+      }
+      .recent-posts-slider .slick-arrow {
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+      }
+      .recent-posts-slider .slick-arrow:before {
+        font-size: 30px;
+      }
+      .recent-posts-slider .slick-next {
+        right: 0;
+      }
+      .recent-posts-slider .slick-prev {
+        left: 0;
+      }
+      .recent-posts-slider .btn-wrap {
+        text-align: center;
+        width: 100%;
+      } */
+      /* .recent-posts-slider button {
+        background-color: #ddd;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        transition: all 0.5s;
+      }
+      .recent-posts-slider button.slick-disabled {
+        opacity: 0.6;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+        <div class="upper-navbar">
+          <div class="container h-100">
+            <div class="upper-navbar-wrapper">
+              <div class="upper-navbar-contact-wrapper">
+                <img src="/assets/images/icon-phone.png" alt="" /><span
+                  >844-841-4202</span
+                >
+              </div>
+              <div class="upper-navbar-quote-wrapper">Quote Your Riser</div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid lower-navbar">
+          <div class="container custom-container-fluid">
+            <div class="custom-nav-toggle mb-3">
+              <a class="navbar-brand" href="../../index.html">
+                <img src="/assets/images/tcrr-logo.png" alt="" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div
+              class="collapse navbar-collapse"
+              id="navbarSupportedContent"
+              style="align-items: end"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-navbar-ul">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="../../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../faq.html">FAQ's</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Event Riser Rentals
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="ChoralRisersAndChoirRisers.html"
+                        >Choral Risers & Choir Risers</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="AudienceSeatingRisers.html"
+                        >Audience Seating Risers</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="PhotoRisers.html"
+                        >Photo Risers</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item active"
+                        href="CommencementAndGraduateRisers.html"
+                        >Commencement and Graduation Risers</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="PressRisers.html"
+                        >Press Risers</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="EventAndTentFlooring.html"
+                        >Event and Tent Flooring</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../quote.html">Quote</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      class="section-wrapper cr-blue-bg initial-section custom-padding-sm text-center"
+    >
+      <div class="container">
+        <h1 class="section-title-white text-center custom-heading">
+          Commencement and Graduation Risers
+        </h1>
+        <p class="custom-text">
+          Commencement and Graduation Risers can mean two different things. They
+          can either be risers built onto a stage for special seating at a
+          higher level for deans, instructors, or speakers; or they can be the
+          risers used to seat the audience attending the commencement or
+          graduation ceremony. In either case, it’s important to choose the best
+          vendor possible!
+        </p>
+      </div>
+    </section>
+
+    <section class="section-wrapper position-relative mt-md-5">
+      <div class="main-template-blue-bg-left"></div>
+      <div class="container">
+        <div class="row custom-row">
+          <div class="col-md-6">
+            <div class="section-content template-section-content">
+              <h1 class="section-title-white">
+                How are
+                <span class="text-yellow">
+                  Commencement and Graduation Risers
+                </span>
+                built?
+              </h1>
+              <p class="section-description-white">
+                Commencement and Graduation Risers can be placed onto an
+                existing stage, or built into a custom stage to elevate the
+                deans, instructors, speakers, or the schools choir above the
+                heads of the graduating class. Risers that are used for the
+                audience help elevate the audience, giving them an unobstructed
+                view of the graduating class. Both sets of risers help ensure
+                that everyone has a great view at the ceremony.
+                <br />
+                Commencement and Graduation Risers can be set up both indoors
+                and outdoors. Risers can be built on uneven and sensitive
+                surfaces such as football fields, soccer fields, and gym floors.
+                Having risers that are stable on any surface opens up the
+                options for a ceremony location.
+                <br />
+                Commencement and Graduation Risers are built for a live load,
+                meaning they can support the movement from the entering and
+                exiting from the risers. Risers are built using 4×4 Bil-Jax
+                staging and steel legs with extra support from cross braces. ADA
+                ramps are then built on two sides of the risers and stage for
+                safe and easy access. These types of risers are normally covered
+                by commercial grade pile carpet or Astro Turf.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="/assets/images/built-img.png"
+              alt=""
+              class="template-image-right"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrapper position-relative mt-md-5">
+      <div class="main-template-blue-bg-right"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="/assets/images/your-next-event-img.png"
+              alt=""
+              class="template-image-left"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="section-content template-section-content">
+              <h1 class="section-title-white">
+                Why you should use<span class="text-yellow">
+                  Commencement and Graduation Risers
+                </span>
+                at your next event?
+              </h1>
+              <p class="section-description-white">
+                Commencement and Graduation Risers are built under ADA
+                guidelines to ensure that safety of everyone who will be using
+                them. All Risers have hand and back rails for a safe entry and
+                exit from the risers. Many times, Commencement and Graduation
+                Risers have ADA ramps instead of steps for easy access to the
+                stage area. Steps with hand rails can also be added as an extra
+                entry point to the stage or risers.
+                <br />
+                Along with building your Commencement and Graduation Risers, we
+                can provide you with chair rentals and other services such as
+                A/V rentals. Our company has everything you need in order to
+                have a well laid out and safe ceremony. We have been
+                implementing these principles into our rentals for over 25 years
+                and promise a professional, timely, and passionate staff.
+                <br />
+                For more information about our services or to get a quote please
+                visit our
+                <a href="Contact.html" class="text-yellow"> contact page</a> We
+                look forward to hearing from you and working with you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrapper d-none d-md-block">
+      <div class="container"></div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 d-flex">
+            <div class="social-media-icons-wrapper">
+              <img src="/assets/images/icon-twitter.png" alt="" />
+              <img src="/assets/images/icon-facebook.png" alt="" />
+              <img src="/assets/images/icon-instagram.png" alt="" />
+              <img src="/assets/images/icon-linkedin.png" alt="" />
+              <img src="/assets/images/icon-youtube.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-8 custom-text-center">
+            <span class="footer-text">
+              Copyright © 2023 · Texas Choral Riser Rental LLC. Powered by
+              <a
+                href="https://www.intelegain.com/"
+                target="_blank"
+                class="footer-link"
+                >Intelegain</a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
