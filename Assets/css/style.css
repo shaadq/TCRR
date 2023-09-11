@@ -45,6 +45,18 @@ body {
   background-image: url(../images/photo-blue-bg.png);
   background-size: cover;
 }
+.press-blue-bg {
+  background-image: url(../images/press-blue-bg.png);
+  background-size: cover;
+}
+.event-tent-blue-bg {
+  background-image: url(../images/event-tent-blue-bg.png);
+  background-size: cover;
+}
+.cg-blue-bg {
+  background-image: url(../images/cg-blue-bg.png);
+  background-size: cover;
+}
 .blog-blue-bg {
   background-image: url(../images/blog-blue-bg.png);
   background-size: cover;
@@ -401,7 +413,7 @@ body {
 .blog-content-text {
   color: #323539;
   opacity: 60%;
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .read-more-wrapper {
   display: flex;
