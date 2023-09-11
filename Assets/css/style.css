@@ -13,6 +13,9 @@ body {
 .h-fit-content {
   height: fit-content !important;
 }
+.h-105 {
+  height: 105% !important;
+}
 .btn-outline-primary:is(:hover, :active, :focus) {
   background-color: #e6c655 !important;
   color: white !important;
@@ -375,7 +378,7 @@ body {
 .main-template-blue-bg-right {
   background-color: #0b0a32;
   position: absolute;
-  height: 105%;
+  height: 100%;
   width: calc(50% + 250px);
   z-index: -1;
   right: 0;
