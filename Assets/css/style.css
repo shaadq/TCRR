@@ -45,6 +45,10 @@ body {
   background-image: url(../images/photo-blue-bg.png);
   background-size: cover;
 }
+.blog-blue-bg {
+  background-image: url(../images/blog-blue-bg.png);
+  background-size: cover;
+}
 .blue-bg-color-left {
   background-color: #0b0a32;
   position: absolute;
@@ -377,6 +381,69 @@ body {
   left: 0;
 }
 
+/* Blog */
+.text-blue {
+  color: #00173e;
+}
+.blog-large-post-img {
+  width: 95%;
+  border-radius: 20px;
+}
+.blog-title {
+  font-weight: bold;
+}
+.small-blog-title {
+  font-weight: bold;
+}
+.blog-content {
+  font-size: 18px;
+}
+.blog-content-text {
+  color: #323539;
+  opacity: 60%;
+    margin-bottom: 0px;
+}
+.read-more-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+}
+.blog-card {
+  height: 600px;
+  width: 95%;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+}
+.blog-top-container {
+  border-radius: 10px;
+  height: 40%;
+  width: 100%;
+  overflow: hidden;
+}
+.blog-bottom-container {
+  text-align: left;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  width: 100%;
+  height: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.blog-date {
+  font-size: 15px;
+}
+.blog-post-img {
+  border-radius: 10px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.blog-post-img:hover {
+  transform: scale(1.1);
+}
 @media screen and (max-width: 576px) {
   .padding-top-sm-0 {
     padding-top: 0;
@@ -536,5 +603,34 @@ body {
     align-items: start;
     margin-top: 29px;
     margin-left: 5px;
+  }
+  /* Blog */
+  .blog-content-text {
+    display: none;
+  }
+  .read-more-wrapper {
+    display: none;
+    font-size: 18px;
+  }
+  .blog-large-post-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .blog-card {
+    width: 100%;
+    height: fit-content;
+  }
+  .blog-bottom-container {
+    padding: 0;
+  }
+  .blog-post-img {
+    margin-bottom: 8px;
+  }
+  .small-blog-title {
+    font-size: 18px;
+  }
+  .blog-date {
+    color: #00173e;
+    margin-bottom: 1px;
   }
 }
