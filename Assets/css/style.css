@@ -57,6 +57,10 @@ body {
   background-image: url(../images/cg-blue-bg.png);
   background-size: cover;
 }
+.quote-blue-bg {
+  background-image: url(../images/quote-blue-bg.png);
+  background-size: cover;
+}
 .blog-blue-bg {
   background-image: url(../images/blog-blue-bg.png);
   background-size: cover;
