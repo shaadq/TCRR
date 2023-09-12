@@ -595,6 +595,9 @@ body {
   padding: 8px 40px;
 }
 @media screen and (max-width: 576px) {
+  .h-105 {
+    height: calc(100% - 140px) !important;
+  }
   .margin-bottom-md-85 {
     margin-bottom: 0px;
   }

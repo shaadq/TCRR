@@ -95,6 +95,10 @@ header {
   }
 }
 @media screen and (max-width: 576px) {
+  .dropdown .dropdown-menu {
+    text-align: center;
+  }
+
   .custom-container-fluid {
     flex-direction: column;
   }
