@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ellipse Pagination with Arrows</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .pagination {
+        display: flex;
+        list-style: none;
+        padding: 0;
+      }
+
+      .pagination li {
+        margin: 0 5px;
+        cursor: pointer;
+      }
+
+      .pagination .ellipse {
+        user-select: none;
+      }
+
+      .pagination .arrow {
+        cursor: pointer;
+      }
+
+      .pagination .active {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="pagination" id="pagination">
+      <li class="arrow" id="prev">&lt;</li>
+      <li class="page">1</li>
+      <li class="ellipse">...</li>
+      <li class="page">5</li>
+      <li class="page">6</li>
+      <li class="page">7</li>
+      <li class="ellipse">...</li>
+      <li class="page">10</li>
+      <li class="arrow" id="next">&gt;</li>
+    </ul>
+
+    <script>
+      const pagination = document.getElementById("pagination");
+      const pages = pagination.querySelectorAll(".page");
+      const prevButton = pagination.querySelector("#prev");
+      const nextButton = pagination.querySelector("#next");
+
+      pages.forEach((page) => {
+        page.addEventListener("click", () => {
+          // Remove the 'active' class from all pages
+          pages.forEach((p) => p.classList.remove("active"));
+          // Add the 'active' class to the clicked page
+          page.classList.add("active");
+        });
+      });
+
+      prevButton.addEventListener("click", () => {
+        const activePage = pagination.querySelector(".active");
+        const prevPage = activePage.previousElementSibling;
+        if (prevPage && !prevPage.classList.contains("arrow")) {
+          // Remove the 'active' class from the current page
+          activePage.classList.remove("active");
+          // Add the 'active' class to the previous page
+          prevPage.classList.add("active");
+        }
+      });
+
+      nextButton.addEventListener("click", () => {
+        const activePage = pagination.querySelector(".active");
+        const nextPage = activePage.nextElementSibling;
+        if (nextPage && !nextPage.classList.contains("arrow")) {
+          // Remove the 'active' class from the current page
+          activePage.classList.remove("active");
+          // Add the 'active' class to the next page
+          nextPage.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

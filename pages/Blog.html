@@ -27,6 +27,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../Assets/css/style.css" />
     <link rel="stylesheet" href="../Assets/css/footer.css" />
     <link rel="stylesheet" href="../Assets/css/header.css" />
@@ -457,25 +464,13 @@
       </div>
     </section>
 
-    <section class="section-wrapper d-none d-md-block">
+    <section class="section-wrapper d-none d-md-block pt-0">
       <div class="container">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
+        <div class="blog-pagination-wrapper">
+          <ul class="pagination" id="pagination">
+            <!-- Pagination items will be added dynamically using JavaScript -->
           </ul>
-        </nav>
+        </div>
       </div>
     </section>
 
@@ -511,5 +506,81 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <!-- Pagination Js -->
+    <script>
+      // Function to generate ellipse pagination with arrows
+      function generateEllipsePagination(currentPage, totalPages) {
+        const pagination = document.getElementById("pagination");
+        pagination.innerHTML = "";
+
+        // Number of visible page numbers (excluding ellipses)
+        const visiblePages = 5;
+
+        // Display left arrow if not on the first page
+        if (currentPage > 1) {
+          pagination.innerHTML += `<li ><i id="prev" class="arrow fa-solid fa-angle-left"></i></li>`;
+        }
+
+        // Display left ellipse if there are more pages to the left
+        if (currentPage > visiblePages) {
+          pagination.innerHTML += `<li class="ellipse">...</li>`;
+        }
+
+        // Calculate the range of page numbers to display
+        let startPage = Math.max(1, currentPage - Math.floor(visiblePages / 2));
+        let endPage = Math.min(totalPages, startPage + visiblePages - 1);
+
+        // Ensure we have enough visible pages on the right
+        if (endPage < visiblePages) {
+          endPage = Math.min(visiblePages, totalPages);
+        }
+
+        // Display page numbers
+        for (let i = startPage; i <= endPage; i++) {
+          const li = document.createElement("li");
+          li.textContent = i;
+          li.classList.add(i === currentPage ? "active" : "page");
+          pagination.appendChild(li);
+        }
+
+        // Display right ellipse if there are more pages to the right
+        if (endPage < totalPages) {
+          pagination.innerHTML += `<li class="ellipse">...</li>`;
+        }
+
+        // Display right arrow if not on the last page
+        if (currentPage < totalPages) {
+          pagination.innerHTML += `<li><i id="next" class="arrow fa-solid fa-angle-right"></i></li>`;
+        }
+      }
+
+      // Example usage:
+      const totalPages = 10; // Change this to the total number of pages
+      let currentPage = 1; // Change this to the current page
+
+      generateEllipsePagination(currentPage, totalPages);
+
+      // Add event listeners to handle pagination clicks
+      const pagination = document.getElementById("pagination");
+      pagination.addEventListener("click", (event) => {
+        if (event.target.classList.contains("page")) {
+          currentPage = parseInt(event.target.textContent);
+          generateEllipsePagination(currentPage, totalPages);
+          // You can add logic here to load the content for the selected page.
+        } else if (event.target.id === "prev") {
+          if (currentPage > 1) {
+            currentPage--;
+            generateEllipsePagination(currentPage, totalPages);
+            // You can add logic here to load the content for the previous page.
+          }
+        } else if (event.target.id === "next") {
+          if (currentPage < totalPages) {
+            currentPage++;
+            generateEllipsePagination(currentPage, totalPages);
+            // You can add logic here to load the content for the next page.
+          }
+        }
+      });
+    </script>
   </body>
 </html>
