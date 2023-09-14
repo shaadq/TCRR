@@ -402,7 +402,7 @@ body {
 .template-blue-bg-color-left {
   background-color: #0b0a32;
   position: absolute;
-  height: calc(100% - 154px);
+  height: calc(100% - 50px);
   width: calc(50% + 150px);
   z-index: -1;
   top: 50px;
@@ -451,7 +451,8 @@ body {
 
 /* Blog */
 .text-blue {
-  color: #00173e;
+  /* color: #00173e; */
+  color: #010028;
 }
 .blog-large-post-img {
   width: 95%;
@@ -665,7 +666,7 @@ body {
   gap: 10px;
 }
 .contact-address-icon {
-  width: 16px;
+  width: 14px;
 }
 .contact-phone-website-wrapper {
   display: flex;
