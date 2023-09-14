@@ -466,10 +466,11 @@ body {
 }
 .blog-content {
   font-size: 18px;
+  opacity: 70%;
 }
 .blog-content-text {
-  color: #323539;
-  opacity: 60%;
+  color: #010028;
+  opacity: 70%;
   margin-bottom: 0px;
 }
 .read-more-wrapper {
