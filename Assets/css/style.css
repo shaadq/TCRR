@@ -20,8 +20,14 @@ body {
 .text-bold {
   font-weight: bold;
 }
+.text-white {
+  color: white;
+}
 .w-md-90 {
   width: 90%;
+}
+.w-md-80 {
+  width: 80%;
 }
 .h-fit-content {
   height: fit-content !important;
@@ -93,6 +99,18 @@ body {
 .blog-blue-bg {
   background-image: url(../images/blog-blue-bg.png);
   background-size: cover;
+}
+.contact-form-blue-bg {
+  background-image: url(../images/contact-form-blue-bg.png);
+  background-size: cover;
+  padding: 0 30px;
+  line-height: 32px;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
 }
 .blue-bg-color-left {
   background-color: #0b0a32;
@@ -623,6 +641,56 @@ body {
 .submit-btn {
   padding: 8px 40px;
 }
+/* Contact */
+.contacts-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 90%; */
+  gap: 50px;
+}
+.contact-title {
+  padding-left: 20px;
+  border-left: 5px solid #00173e;
+}
+.contact-address-location {
+  display: flex;
+  align-items: start;
+  justify-self: center;
+  gap: 10px;
+}
+.contact-address-icon {
+  width: 16px;
+}
+.contact-phone-website-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.border-right-1 {
+  border-right: 1px solid lightgray;
+}
+.custom-border {
+  background-color: lightgray;
+  height: 123px;
+  width: 1px;
+  /* margin: 0 -30px; */
+}
+.quote-form-page-btn {
+  width: fit-content;
+  margin: 0 auto;
+}
+.quote-form-page-btn:hover {
+  color: #00173e;
+}
+.looking-for-job-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.mag-glass-img {
+  width: 40px;
+}
 @media screen and (max-width: 576px) {
   .h-105 {
     height: calc(100% - 140px) !important;
@@ -840,5 +908,26 @@ body {
   }
   .quote-form-wrapper {
     padding: 30px 15px;
+  }
+  /* Contact Us */
+  .w-md-80 {
+    width: 100%;
+  }
+  .contacts-wrapper {
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 15px;
+  }
+  .custom-border {
+    display: none;
+  }
+  .contact-form-blue-bg {
+    padding: 50px 30px;
+    line-height: 29px;
+    border-radius: 10px 10px 0 0;
+  }
+  .looking-for-job-wrapper {
+    gap: 15px;
   }
 }
