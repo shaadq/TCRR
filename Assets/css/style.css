@@ -88,7 +88,7 @@ body {
 }
 .quote-form-blue-bg {
   position: relative;
-  padding: 30px 30px 70px;
+  padding: 80px 30px 70px;
   background-image: url(../images/quote-form-blue-bg.png);
   background-size: cover;
   line-height: 32px;
@@ -335,6 +335,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.custom-faq-accordion .accordion-body {
+  color: #2d2f3c;
+  opacity: 75%;
 }
 .custom-faq-accordion .accordion-item {
   border: 1px solid #e5ecf9;
