@@ -152,11 +152,13 @@ body {
   color: white;
   font-weight: bolder;
   font-size: 45px;
+  letter-spacing: 0.5px;
 }
 .section-title-black {
   color: black;
   font-weight: bolder;
   font-size: 45px;
+  letter-spacing: .5px;
 }
 .section-description-white {
   color: white;

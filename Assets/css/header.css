@@ -80,9 +80,9 @@ header {
 .navbar-toggler:focus {
   box-shadow: none;
 }
-.nav-link {
+header .nav-link {
   font-size: 15px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   color: black;
 }
 
