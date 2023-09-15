@@ -136,8 +136,11 @@ body {
 .section-wrapper {
   padding: 40px 0;
 }
-.text-yellow {
+.text-yellow-light {
   color: #e6c655;
+}
+.text-yellow-dark {
+  color: #be9e2d;
 }
 .section-content {
   padding-top: 30px;
@@ -155,10 +158,10 @@ body {
   letter-spacing: 0.5px;
 }
 .section-title-black {
-  color: black;
+  color: #010028;
   font-weight: bolder;
   font-size: 45px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 .section-description-white {
   color: white;
@@ -166,7 +169,7 @@ body {
   width: 90%;
 }
 .section-description-black {
-  color: black;
+  color: #010028;
   font-size: 18px;
   width: 90%;
 }
@@ -247,10 +250,11 @@ body {
 .client-feedback-name {
   font-size: 17px;
   margin-bottom: 1px;
+  color: #323539;
 }
 .client-feedback-text {
-  color: #323539;
-  opacity: 60%;
+  color: #010028;
+  opacity: 75%;
   font-size: 15px;
 }
 .name-star-container {
@@ -309,11 +313,14 @@ body {
 .recent-post-title {
   font-size: 20px;
   font-weight: bold;
+  color: #010028;
 }
 .recent-post-content {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
+  color: #010028;
+  opacity: 75%;
 }
 .client-feedback-slider-container {
   margin-top: 40px;
@@ -337,6 +344,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.custom-faq-accordion .accordion-header {
+  color: #010028;
 }
 .custom-faq-accordion .accordion-body {
   color: #2d2f3c;
