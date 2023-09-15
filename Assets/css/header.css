@@ -21,8 +21,9 @@ header {
 }
 .upper-navbar {
   background-color: black;
-  height: 27px;
+  height: 32px;
   width: 100%;
+  font-size: 15px;
 }
 .lower-navbar {
   background-color: #ffffff;
@@ -49,7 +50,6 @@ header {
   gap: 7px;
   color: white;
   padding: 0 15px;
-  font-size: 14px;
 }
 .upper-navbar-contact-wrapper img {
   width: 15px;
@@ -60,7 +60,6 @@ header {
   height: 100%;
   font-weight: bold;
   padding: 0 15px;
-  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;

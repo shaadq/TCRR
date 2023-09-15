@@ -2,7 +2,7 @@ body {
   overflow-x: hidden;
   font-family: "Euclid Circular A", sans-serif !important;
 }
-.homepage-form-wrapper ::placeholder {
+::placeholder {
   color: lightgray !important;
 }
 .form-textarea-wrapper ::placeholder {
@@ -41,7 +41,7 @@ body {
   border: 1px solid #e6c655 !important;
 }
 .initial-section {
-  margin-top: 114.41px;
+  margin-top: 119.41px;
 }
 .margin-bottom-md-85 {
   margin-bottom: 85px;
@@ -475,6 +475,11 @@ body {
 }
 .small-blog-title {
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .blog-content {
   font-size: 18px;
@@ -710,12 +715,25 @@ body {
 .mag-glass-img {
   width: 40px;
 }
+.commencement-youtube-wrapper {
+  width: 60%;
+  position: relative;
+  bottom: 120px;
+}
+.commencement-header-section {
+  padding-bottom: 170px !important;
+}
+.commencement-youtube-vid-section {
+  margin-bottom: -50px;
+}
 @media screen and (max-width: 1399px) {
   .section-description-black {
-    width: 100%;
+    /* width: 100%; */
+    font-size: 16px;
   }
   .section-description-white {
-    width: 100%;
+    /* width: 100%; */
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -963,4 +981,12 @@ body {
   .looking-for-job-wrapper {
     gap: 15px;
   }
+  /* Commencement */
+  .commencement-youtube-wrapper {
+    width: 100%;
+    bottom: 230px;
+  }
+  .commencement-header-section {
+    padding-bottom: 270px !important;
+}
 }
