@@ -984,9 +984,9 @@ body {
   /* Commencement */
   .commencement-youtube-wrapper {
     width: 100%;
-    bottom: 230px;
+    /* bottom: 230px; */
   }
   .commencement-header-section {
-    padding-bottom: 270px !important;
+    /* padding-bottom: 270px !important; */
 }
 }
