@@ -124,6 +124,10 @@ body {
 .light-blue-bg-color {
   background-color: #f1f5fb;
 }
+.event-riser-blue-bg {
+  background-image: url(../images/event-riser-blue-bg.png);
+  background-size: cover;
+}
 .custom-padding {
   padding: 90px 0 !important;
 }
@@ -726,6 +730,29 @@ body {
 .commencement-youtube-vid-section {
   margin-bottom: -50px;
 }
+/* Event Riser Rentals */
+.event-riser-rental-card {
+  margin-bottom: 40px;
+}
+.event-riser-rental-card div {
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.event-riser-rental-card img {
+  width: 100%;
+  transition: 0.3s;
+}
+.event-riser-rental-card img:hover {
+  transform: scale(1.05);
+}
+.event-riser-rental-card p {
+  color: #010028;
+  opacity: 75%;
+}
+.event-riser-rental-card h5 {
+  margin-bottom: 4px;
+}
 @media screen and (max-width: 1399px) {
   .section-description-black {
     /* width: 100%; */
@@ -988,5 +1015,5 @@ body {
   }
   .commencement-header-section {
     /* padding-bottom: 270px !important; */
-}
+  }
 }

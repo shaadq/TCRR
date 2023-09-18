@@ -97,17 +97,16 @@
                 <li class="nav-item">
                   <a class="nav-link" href="aboutus.html">About Us</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown header-dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
+                    href="event-riser-rental.html"
+                    role=""
                     aria-expanded="false"
                   >
                     Event Riser Rentals
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu header-dropdown-menu">
                     <li>
                       <a
                         class="dropdown-item"
@@ -173,7 +172,14 @@
       class="section-wrapper blog-blue-bg initial-section custom-padding-sm text-center"
     >
       <div class="container">
-        <h1 class="section-title-white text-center custom-heading">Blog</h1>
+        <h1 class="section-title-white text-center custom-heading">
+          View our Blogs here
+        </h1>
+        <p class="custom-text">
+          You’ve found it – our repository of all things for audience seating
+          for events! View our blogs to see our thoughts and observations on our
+          seating risers for events of all shapes and sizes.
+        </p>
       </div>
     </section>
 
@@ -581,6 +587,23 @@
           }
         }
       });
+    </script>
+    <!-- Header dropdown js -->
+    <script>
+      document
+        .querySelector(".header-dropdown")
+        .addEventListener("mouseenter", function () {
+          console.log("shaad");
+          document.querySelector(".header-dropdown-menu").classList.add("show");
+        });
+
+      document
+        .querySelector(".header-dropdown")
+        .addEventListener("mouseleave", function () {
+          document
+            .querySelector(".header-dropdown-menu")
+            .classList.remove("show");
+        });
     </script>
   </body>
 </html>

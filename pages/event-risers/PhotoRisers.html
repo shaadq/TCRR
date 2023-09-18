@@ -92,17 +92,16 @@
                 <li class="nav-item">
                   <a class="nav-link" href="./../aboutus.html">About Us</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown header-dropdown">
                   <a
                     class="nav-link dropdown-toggle active"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
+                    href="./../event-riser-rental.html"
+                    role=""
                     aria-expanded="false"
                   >
                     Event Riser Rentals
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu header-dropdown-menu">
                     <li>
                       <a
                         class="dropdown-item"
@@ -296,7 +295,9 @@
                 <br />
                 For more information about our services or to get a quote please
                 visit our
-                <a href="../Contact.html" class="text-yellow-light"> contact page</a>
+                <a href="../Contact.html" class="text-yellow-light">
+                  contact page</a
+                >
                 We look forward to hearing from you and working with you!
               </p>
             </div>
@@ -341,5 +342,22 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <!-- Header dropdown js -->
+    <script>
+      document
+        .querySelector(".header-dropdown")
+        .addEventListener("mouseenter", function () {
+          console.log("shaad");
+          document.querySelector(".header-dropdown-menu").classList.add("show");
+        });
+
+      document
+        .querySelector(".header-dropdown")
+        .addEventListener("mouseleave", function () {
+          document
+            .querySelector(".header-dropdown-menu")
+            .classList.remove("show");
+        });
+    </script>
   </body>
 </html>

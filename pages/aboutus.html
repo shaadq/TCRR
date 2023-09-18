@@ -89,17 +89,16 @@
                 <li class="nav-item">
                   <a class="nav-link active" href="aboutus.html">About Us</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown header-dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
+                    href="event-riser-rental.html"
+                    role=""
                     aria-expanded="false"
                   >
                     Event Riser Rentals
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu header-dropdown-menu">
                     <li>
                       <a
                         class="dropdown-item"
@@ -227,27 +226,40 @@
           <div class="col-md-6">
             <div class="section-content custom-margin h-fit-content">
               <h1 class="section-title-white">
-                The Story of In Depth Events <br />
+                The Story of In
                 <span class="text-yellow-light"> Depth Events</span>
               </h1>
-              <p class="section-description-white w-100">
+              <div class="section-description-white w-100">
                 In Depth Events is the brainchild of our two co-Founders, Robert
                 Chapman and Matt Spencer. In Depth Events is a live events
                 production company, providing specialty live event production
                 services for concerts, corporate events, and private events.
                 <br />
-                In Depth Events is our flagship site with a complete listing of
-                all the production services we offer. Texas Choral Riser Rental
-                is a site designed to reach clients looking for audience seating
-                solutions for live events. LED Party Floors is a specialty site
-                designed to show off our LED Dance Floors. Texas Stage Rental
-                provides clients with information on our custom stage rentals
-                and installations.
-                <br />
+
+                <ul class="section-description-white mt-3">
+                  <li>
+                    <strong> In Depth Events </strong> is our flagship site with
+                    a complete listing of all the production services we offer
+                  </li>
+                  <li>
+                    <strong> Texas Choral Riser Rental </strong> is a site
+                    designed to reach clients looking for audience seating
+                    solutions for live events.
+                  </li>
+                  <li>
+                    <strong>LED Party Floors</strong> is a specialty site
+                    designed to show off our LED Dance Floors
+                  </li>
+                  <li>
+                    <strong>Texas Stage Rental</strong> provides clients with
+                    information on our custom stage rentals and installations.
+                  </li>
+                </ul>
+
                 We welcome you to visit any of our websites, or feel free to
                 contact us by phone at any time. We look forward to hearing from
                 you, and working with you!
-              </p>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
@@ -295,5 +307,22 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <!-- Header dropdown js -->
+    <script>
+      document
+        .querySelector(".header-dropdown")
+        .addEventListener("mouseenter", function () {
+          console.log("shaad");
+          document.querySelector(".header-dropdown-menu").classList.add("show");
+        });
+
+      document
+        .querySelector(".header-dropdown")
+        .addEventListener("mouseleave", function () {
+          document
+            .querySelector(".header-dropdown-menu")
+            .classList.remove("show");
+        });
+    </script>
   </body>
 </html>
