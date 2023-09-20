@@ -753,6 +753,10 @@ body {
 .event-riser-rental-card h5 {
   margin-bottom: 4px;
 }
+.event-riser-rental-section-wrapper a {
+  text-decoration: none;
+  color: initial;
+}
 @media screen and (max-width: 1399px) {
   .section-description-black {
     /* width: 100%; */
